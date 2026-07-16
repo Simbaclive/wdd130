@@ -1,32 +1,49 @@
-main {
-  max-width: 840px;
+
+:root {
+  --primary-color: #333;
+  --accent-color: #003366;
+  --bg-color: #ddd;
+  --border-style: 1px solid rgb(0 0 0 / 10%);
+  --standard-padding: 1rem;
 }
 
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
 
-aside img {
-  width: 200px;
-  height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main img {
-  width: 150px;
-  height: auto;
+  float: right;
+  margin: 10px;
   border: 1px solid #000;
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+aside {
+  width: 20rem;
+  text-align: center;
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  z-index: 10;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
 nav {
-  background-color: #333;
+  background-color: var(--primary-color);
   padding: 10px;
 }
 
@@ -37,15 +54,21 @@ nav a {
 }
 
 h1 {
-  color: #003366;
-}
-
-p {
-  padding: 0;
+  color: var(--accent-color);
 }
 
 footer {
+  clear: both;
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+}
+
+
+.box {
+  margin: var(--standard-padding);
+  border: var(--border-style);
+  padding: var(--standard-padding);
+  background-color: var(--bg-color);
+  color: #000;
 }
