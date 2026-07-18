@@ -1,6 +1,6 @@
 :root {
   --primary-color: #556b2f;   
-  --secondary-color: #f4a261;  
+  --secondary-color: lightgrey;  
   --accent1-color: #264653;    
   --accent2-color: #e9c46a;    
   --heading-font: "Georgia", serif;
@@ -17,7 +17,12 @@ body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
-
+section {
+  margin: 30px 16px;
+  padding: 8px;
+  background-color: var(--secondary-color); 
+  border-radius: 5px; 
+}
 header, footer {
   width: 100%;
   background-color: var(--primary-color);
