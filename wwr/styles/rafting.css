@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
+  --primary-color: #556b2f;   
+  --secondary-color: #f4a261;  
+  --accent1-color: #264653;    
+  --accent2-color: #e9c46a;    
   --heading-font: "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -18,42 +18,53 @@ body {
   color: var(--accent1-color);
 }
 
- main {
-  width: 840px;
-  margin: 0 auto;
+header, footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 5%;
 }
- footer {
- 
-  margin: 0 auto;
-   background-color: darkolivegreen; 
-}
+
+
 header {
-  background-color: darkolivegreen; 
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
-  color: white;           
-  text-decoration: none;  
-  padding: 0 15px;        
-  font-weight: bold;
+
+main {
+  width: 840px;
+  margin: 0 auto;
 }
+
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-
 nav, p, section, article {
-  margin: 30px 16px; 
+  margin: 30px 16px;
   padding: 8px;
+}
+
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: bold;
 }
 
 .socialmedia a {
   text-decoration: none;
+}
+
+
+.socialmedia a img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
 .hero {
@@ -77,13 +88,14 @@ h1 {
   color: #fff;
 }
 
+
 .hero article {
   position: absolute;
-  bottom: 20px; 
-  left: 20px;   
-  width: 80%;   
-  background-color: rgba(255, 255, 255, 0.8); 
+  bottom: 20px;
+  left: 20px;
+  width: 90%;
   padding: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .hero article img {
@@ -92,8 +104,7 @@ h1 {
   margin: 10px;
 }
 
-.socialmedia a img {
-    width: 40px;     
-    height: 40px;     
-    margin: 5px;      
+
+footer nav a {
+  color: var(--accent2-color);
 }
