@@ -19,7 +19,7 @@ body {
   color: var(--accent1-color);
 }
 
-/* Header Grid and Layout */
+
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -61,12 +61,17 @@ section {
   border-radius: 5px;
 }
 
-h1, h2 {
+h1 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Fix contrast for h2 inside sections */
+h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+
 section h2 {
   color: var(--accent1-color);
 }
@@ -76,7 +81,7 @@ p, article {
   padding: 8px;
 }
 
-/* Footer Layout & Social Media */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -106,7 +111,7 @@ footer nav a {
   margin: 5px;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
 }
@@ -128,7 +133,7 @@ footer nav a {
   color: #fff;
 }
 
-/* Contact page main h1 styling */
+
 main > h1 {
   text-align: center;
   margin: 20px 0;
@@ -175,7 +180,7 @@ main > h1 {
   margin-top: 0.5rem;
 }
 
-/* --- Contact Page Additions --- */
+
 
 .contact-info ul {
   list-style-type: none;
