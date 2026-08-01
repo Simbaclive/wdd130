@@ -66,6 +66,11 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+/* Fix contrast for h2 inside sections */
+section h2 {
+  color: var(--accent1-color);
+}
+
 p, article {
   margin: 30px 16px;
   padding: 8px;
@@ -112,7 +117,7 @@ footer nav a {
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -121,6 +126,13 @@ h1 {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
+}
+
+/* Contact page main h1 styling */
+main > h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--accent1-color);
 }
 
 .hero article {
@@ -278,7 +290,7 @@ fieldset.form-item input[type="radio"] {
 
 fieldset.form-item label {
   font-weight: normal;
-  color: var(--primary-color);
+  color: var(--accent1-color);
 }
 
 .checkbox-item {
@@ -294,7 +306,7 @@ fieldset.form-item label {
 
 .checkbox-item label {
   font-weight: normal;
-  color: var(--primary-color);
+  color: var(--accent1-color);
 }
 
 button[type="submit"] {
